@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .form{
+            background-color: rgb(39, 236, 128);
+        }
+        input[type="text"],input[type="password"]{
+            border: rgba(112, 212, 129, 0.774);
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+        .form{
+            padding: 10px;
+        }
+        .user-input, .user-btn{
+            margin-bottom: 10px;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            width: 100px;
+            padding: 5px;
+            background-color: rgba(18, 110, 153, 0.432);
+            color: rgb(27, 141, 207);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(34, 53, 4);
+            color: #fff;
+        }
+    </style>
+    <title>Tutorial Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Ini navbar</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latihan4.html">About me</a></li>
+            <li><a href="latihan5dan6.html">register</a></li>
+        </ul>
+    </nav>
+    <main>
+   <div class="form">
+       <h1>Registrasi peserta</h1>
+       <form action="register">
+           <div class="user-input">
+               <input type="text" name="username" id="" placeholder="Username">
+           </div>
+           <div class="user-input">
+               <input type="text" name="nama_lengkap" id="" placeholder="Nama Lengkap">
+           </div>
+           <div class="user-input">
+               <input type="text" name="userpassword" id="" placeholder="Password">
+           </div>
+           <div class="user-input">
+               <input type="text" name="currentpassword" id="" placeholder="Konfirmasi Password">
+           </div>
+           <div class="user-input">
+               <input type="text" name="alamat" id="" placeholder="Masukkan alamat">
+           </div>
+           <div class="user-input">
+           <select name="prodi">
+               <option value="Sistem Informasi">Sistem Informasi</option>
+               <option value="Teknik Informatika">Teknik Informatika</option>
+               <option value="Manajemen Informatika">Manajemen Informatika</option>
+               <option value="Komputerisasi Akuntansi">Komputerisasi Akuntansi</option>
+           </select>
+           </div>
+           <div class="user-btn">
+            <button type="submit">Submit</button>
+            <button type="reset">Batal</button>
+        </div>
+       </form>
+   </div>
+   </main>
+</body>
+</html>

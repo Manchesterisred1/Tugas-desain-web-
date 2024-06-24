@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Optional for custom styles -->
+    <title>Form Registrasi Mahasiswa</title>
+</head>
+<style>
+    body {
+      background-color: lightblue;
+    }
+    </style>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Registrasi Mahasiswa</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h2 class="text-center">Form Registrasi Mahasiswa</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="text" class="form-control" id="Email" placeholder="Masukan Email" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="program-studi">Program Studi:</label>
+                <select class="form-control" id="program-studi" required>
+                    <option value="" disabled selected>Pilih Program Studi</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Manajemen Informasi">Manajemen Informasi</option>
+                    <option value="Komputer Akuntansi">Komputer Akuntansi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jenjang-pendidikan">Jenjang Pendidikan:</label>
+                <select class="form-control" id="jenjang-pendidikan" required>
+                    <option value="" disabled selected>Pilih Jenjang Pendidikan</option>
+                    <option value="Strata 1">Strata 1</option>
+                    <option value="Diploma 3">Diploma 3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Universitas kaputama. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script> <!-- Optional for custom scripts -->
+</body>
+</html>
